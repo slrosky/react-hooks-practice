@@ -1,11 +1,11 @@
-import React from "react";
-import Navebar from './components/Navbar';
-import BookList from "./components/BookList";
+import React from 'react';
+import Navbar from './components/Navbar';
+import BookList from './components/BookList';
 
 function App() {
   return (
     <div className="App">
-      <Navebar />
+      <Navbar />
       <BookList />
     </div>
   );

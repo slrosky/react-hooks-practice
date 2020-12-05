@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 class BookList extends Component {
-    state = {}
     render() {
         return (
-            <div className="book-list">
+            <div className='book-list'>
                 <ul>
-                    <li>The Way of Kings</li>
-                    <li>The Name of The Wind</li>
-                    <li>The Final Empire</li>
+                    <li>the way of kings</li>
+                    <li>the name of the wind</li>
+                    <li>the final empire</li>
                 </ul>
             </div>
         );
