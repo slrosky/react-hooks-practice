@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, { createContext, Component } from 'react';
 
 export const ThemeContext = createContext();
 
@@ -9,7 +9,11 @@ class ThemeContextProvider extends Component {
         dark: { syntax: '#ddd', ui: '#333', bg: '#555' }
     }
     render() {
-        return (  );
+        return (
+            <ThemeContext.Provider value={{ ...this.state }}>
+                {this.props.children}
+            </ThemeContext.Provider>
+        );
     }
 }
 
